@@ -1,3 +1,5 @@
+version: "3.3"
+
 services:
   crawler-app:
     build:
@@ -5,5 +7,5 @@ services:
       dockerfile: Dockerfile
     container_name: crawler-docker-app
     ports:
-      - "${APP_PORT:-8820}:8080"
+      - "${APP_PORT}:8080"
     restart: unless-stopped
